@@ -1,4 +1,4 @@
-package singleton.LazyDoubleChecked;
+package Singleton.LazyDoubleChecked;
 
 public class LazyDoubleCheckedDemo {
 
