@@ -26,9 +26,8 @@ public class DispatcherMediator implements Mediator {
     @Override
     public void requestRide(Client client) {
         System.out.println("Ride requested by " + client.getName());
-        // Логика поиска свободного водителя и оповещения
         if (!drivers.isEmpty()) {
-            Driver driver = drivers.get(0); // Простой пример выбора первого водителя
+            Driver driver = drivers.get(0);
             dispatcher.assignDriver(driver, client);
         } else {
             System.out.println("No available drivers.");
